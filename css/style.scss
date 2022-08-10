@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// css reset 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+svg{
+    width: 32px;
+}
+// color plate
+$btnColor: #C30047;
+$colorH1: #fff;
+$fontColor: #000;
+$colorP: #6A6063;
+$herobtn: #ff6378;
+
+
+@import 'header';
+@import 'hero';
+@import 'cause';
+@import 'who';
+@import 'serve';
+@import 'help';
+@import 'join';
+@import 'footer';
+@import 'responsive';

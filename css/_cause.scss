@@ -1,0 +1,114 @@
+#cause{
+    width: 100%;
+    position: relative;
+    padding: 90px 0;
+    
+    .cause-content{
+        h1{
+            text-align: center;
+            margin-bottom: 80px;
+            font-size: 3em;
+            font-weight: 500;
+        }
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .col-3{
+            flex-basis: 32%;
+            border: 2px solid #ddd;
+            border-radius: 9px;
+            transition: 0.5s all ease;
+
+            .img-thumbnail{
+                img{
+                    width: 100%;
+                }
+            }
+
+            .content{
+                margin-left: 25px;
+                margin-top: 40px;
+
+                h1{
+                    text-transform: capitalize;
+                    font-size: 28px;
+                    margin-bottom: 25px;
+                    color: $herobtn;
+                    transition: 0.5s all ease;
+
+                    &:hover{
+                        color: $btnColor;
+                    }
+                }
+                p{
+                    line-height: 32px;
+                    color: $colorP;
+                    letter-spacing: 1px;
+                    margin-bottom: 25px;
+                }
+            }
+            .col-btn{
+                display: flex;
+                justify-content: space-around;
+                padding-bottom:50px ;
+                align-items: center;
+
+                .btn{
+                    background: $btnColor;
+                    padding: 12px 30px;
+                    text-transform: capitalize;
+                    color: $colorH1;
+                    position: relative;
+                    border-radius: 50px;
+                    overflow: hidden;
+                    z-index: 1;
+                    cursor: pointer;
+                    a{
+                        color: $colorH1;
+                        // z-index: 1;
+                    }
+
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 0%;
+                        background: $herobtn;
+                        background: #000;
+                        z-index: -1;
+                        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+                    }
+                    &:hover::before{
+                        width: 100%;
+                    }
+
+                }
+                .h1-content{
+                    h2{
+                        font-size: 20px;
+                        color: $btnColor;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        text-transform: capitalize;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            &:hover{
+                // box-shadow: 5px 5px 5px 5px $herobtn;
+                box-shadow: 5px 5px 8px 10px $herobtn;
+                
+            }
+        }
+    }
+}

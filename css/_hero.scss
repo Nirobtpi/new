@@ -1,0 +1,62 @@
+#hero{
+    width: 100%;
+    position: relative;
+    background: url(../img/xh1_hero3.jpg.pagespeed.ic.vIwOkqUwpn.webp) no-repeat;
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+
+    .content{
+        width: 50%;
+        position: absolute;
+        margin-top: 15%;
+        
+        h1{
+            color: $colorH1;
+            font-size: 5em;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+        p{
+            color: $colorH1;
+            letter-spacing: 1px;
+            line-height: 32px;
+            margin-bottom: 50px;
+        }
+
+        .btn{
+           color: $colorH1;
+           text-transform: capitalize;
+           padding: 15px 25px;
+           background: $herobtn;
+           position: relative;
+           z-index: 1;
+           width: 150px;
+           border-radius: 50px;
+           overflow: hidden;
+           cursor: pointer;
+           
+           a{
+            color: $colorH1;
+           }
+
+           &::before{
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: $btnColor;
+            z-index: -1;
+            transition: 0.5s all cubic-bezier(0.11, 0.76, 0.71, 0.34);
+           }
+
+           &:hover::before{
+            width: 100%;
+           }
+       
+        }
+    }
+
+}

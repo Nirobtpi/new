@@ -1,0 +1,47 @@
+#who{
+    width: 100%;
+    position: relative;
+    padding: 60px 0;
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        flex-grow: 1;
+        // background: red;
+
+        .col-2{
+            flex-basis: 48%;
+
+            .img-thumbnail{
+               img{
+                width: 95%;
+               }
+            }
+
+            h2{
+                font-size: 45px;
+                font-weight: 500;
+                color: #2c2c2c;
+                margin-bottom: 50px;
+            }
+            h6{
+                font-size: 18px;
+                letter-spacing: 1px;
+                color: $colorP;
+                font-weight: 300;
+                margin-bottom: 25px;
+                line-height: 32px;
+            }
+            p{
+                color: $colorP;
+                line-height: 32px;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+    }
+}

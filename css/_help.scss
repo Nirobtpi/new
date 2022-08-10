@@ -1,0 +1,70 @@
+#help{
+    width: 100%;
+    position: relative;
+    background: url(../img/section-bg2.jpg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 80px 0;
+
+    .content-help{
+        width: 40%;
+        background: #fff;
+        padding: 30px 35px 30px 30px;
+        border-radius: 10px;
+        margin-left: 45%;
+        margin-top: 2%;
+
+        a{
+            h2{
+                text-transform: capitalize;
+                font-size: 30px;
+                margin-bottom: 25px;
+                margin-top: 25px;
+                transition: 0.5s all linear;
+
+                &:hover{
+                    color: $btnColor;
+                }
+            }
+        }
+        p{
+            line-height: 32px;
+            font-size: 16px;
+            color: $colorP;
+            margin-bottom: 30px;
+        }
+
+        .btn{
+            background: $btnColor;
+            width: 200px;
+            padding: 20px 35px;
+            margin: 20px 0;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 1;
+            overflow: hidden;
+            position: relative;
+            a{
+                text-transform: capitalize;
+                font-size: 16px;
+                color: #fff;
+            }
+
+            &::after{
+                position: absolute;
+                content: '';
+                width: 0%;
+                top: 0;
+                left: 0;
+                height: 100%;
+                background: $herobtn;
+                transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                z-index: -1;
+            }
+            &:hover::after{
+                width: 100%;
+            }
+        }
+    }
+}

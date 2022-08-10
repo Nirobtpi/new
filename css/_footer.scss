@@ -1,0 +1,116 @@
+#footer{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background: #301A22;
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 80px 0;
+        position: absolute;
+
+        .col-4{
+            flex-basis: 23%;
+
+            .logo{
+                margin-bottom: 50px;
+                a{
+                    color: #fff;
+                }
+            }
+            .content{
+                p{
+                    color: #fff;
+                    line-height: 32px;
+                    margin-bottom: 25px;
+                    opacity: 0.8;
+                    font-weight: 500;
+                }
+            }
+            .icon{
+                display: flex;
+                
+                li{
+                    padding: 0px 15px;
+
+                    a{
+                        color: #fff;
+                        
+                        svg{
+                            width: 22px;
+                            fill: #fff;
+                            transition: 0.5s all linear;
+
+                            &:hover{
+                                transform: rotate(360deg);
+                                fill: #ddd;
+                            }
+                        }
+                       
+                    }
+                }
+            }
+            h2{
+                margin-bottom: 50px;
+                font-size: 22px;
+                color: $colorH1;
+            }
+            ul{
+                li{
+                    padding: 10px 0;
+                    a{
+                        text-transform: capitalize;
+                        color: $colorH1;
+                        transition: 0.5s all linear;
+
+                        &:hover{
+                            border-bottom: 1px solid $colorH1;
+                        }
+                    }
+                }
+            }
+
+            p{
+                color: $colorH1;
+                margin-bottom: 50px;
+                line-height: 32px;
+            }
+            input{
+                padding: 15px 25px;
+                border: 1px solid #ddd;
+                outline: none;
+                background: #301A22;
+                border-radius: 25px;
+                border-right: none;
+                margin-left: -30px;
+                &::placeholder{
+                    color: #fff;
+                    font-size:16px;
+                }
+            }
+            
+            input[type=email]{
+                color: #fff;
+                font-size: 16px;
+            }
+            .btn{
+                display: inline-block;
+                margin-top: 0px;
+                position: absolute;
+                background: $btnColor;
+                padding: 5px 20px;
+                border-radius: 50px;
+                margin-left: -50px;
+
+                a{
+                    svg{
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+#join{
+    width: 100%;
+    position: relative;
+    padding: 90px 0;
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .col-2{
+            flex-basis: 35%;
+
+           h2{
+            font-size: 32px;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            margin-top: 50px;
+           }
+           p{
+            line-height: 32px;
+            font-size: 18px;
+            color: $colorP;
+            margin-bottom: 35px;
+           }
+           
+           .btn{
+                padding: 15px 25px;
+                background: $btnColor;
+                width: 120px;
+                border-radius: 50px;
+                cursor: pointer;
+                z-index: 1;
+                overflow: hidden;
+                position: relative;
+
+                a{
+                    text-align: center;
+                    color: $colorH1;
+                    font-weight: 500;
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 0%;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    background: $herobtn;
+                    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    z-index: -1;
+                }
+                &:hover::after{
+                    width: 100%;
+                }
+           }
+        }
+        .col-4{
+            flex-basis: 60%;
+
+            .row-1{
+                display: flex;
+                justify-content: space-between;
+                // background: red;
+                flex-wrap: wrap;
+
+                .col-3{
+                    flex-basis: 48%;
+
+                    .hand{
+                        width: 100%;
+                        height: 62vh;
+                    }
+                }
+            }
+        }
+    }
+   
+}
